@@ -1,0 +1,21 @@
+<table class="table table-secondary table-striped">
+    <thead>
+      <tr>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of employees">
+        <td>{{emp.firstName}}</td>
+        <td>{{emp.lastName}}</td>
+        <td>
+            <button (click)="eventHandler('details',emp.id)"  class="btn btn-info" style="margin-left: 10px">Details</button>
+            <button (click)="eventHandler('edit',emp.id)" class="btn btn-warning" style="margin-left: 10px">Edit</button>
+            <button (click)="eventHandler('delete',emp.id)" class="btn btn-danger" style="margin-left: 10px">Delete</button>
+            
+        </td>
+      </tr>
+    </tbody>
+  </table>

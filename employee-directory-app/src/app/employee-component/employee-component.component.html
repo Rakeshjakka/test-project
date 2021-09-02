@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-header bg-secondary">
+                <h6 style="color: whitesmoke;">Employees</h6>
+            </div>
+            <div class="card-body">
+                <app-employee-list></app-employee-list>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <button class="w-25 bg-dark text-white" style="margin-left: 35%;">Add Employee</button>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="card">
+            <div class="card-header bg-secondary">
+                <h6 style="color: whitesmoke;">Details</h6>
+            </div>
+            <div class="card-body">
+                <app-employee-details [hidden]="selectedTool != 'details'"></app-employee-details>
+                <app-employee-edit [hidden]="selectedTool != 'edit'"></app-employee-edit>
+                <app-employee-add [hidden]="selectedTool != 'add'"></app-employee-add>
+            </div>
+        </div>
+
+    </div>
+</div>

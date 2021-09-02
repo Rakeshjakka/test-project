@@ -1,0 +1,28 @@
+<table class="table table-striped" *ngFor="let emp of employeeselected">
+    <tbody>
+      <tr>
+        <td>Id:</td>
+        <td>{{emp.id}}</td>
+     </tr>
+     <tr>
+        <td>First Name:</td>
+        <td>{{emp.firstName}}</td>
+     </tr>
+     <tr>
+        <td>Last Name:</td>
+        <td>{{emp.lastName}}</td>
+     </tr>
+     <tr>
+        <td>Date Of Joining:</td>
+        <td>{{emp.dateOfJoining}}</td>
+     </tr>
+     <tr>
+        <td>Status:</td>
+        <td>{{emp.status}}</td>
+     </tr>
+     <tr>
+        <td>Current Role:</td>
+        <td>{{emp.currentRole.roleName}}</td>
+     </tr>
+    </tbody>
+  </table>
